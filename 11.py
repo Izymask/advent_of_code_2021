@@ -53,7 +53,6 @@ class Population:
             for index_2 in range(max(0, j - 1), min(10, j + 2)):
                 if index_1 == i and index_2 == j:
                     continue
-                # print(i, j, index_1, index_2)
                 octopuse = self.octopuses[index_1][index_2]
                 if octopuse.get('flash'):
                     continue
