@@ -3,7 +3,6 @@ import networkx as nx
 class Cave:
     def __init__(self, path):
         self.base_map = {}
-        self.path_values = []
         with open(path, 'r') as f:
             for i, line in enumerate(f.readlines()):
                 for j, value in enumerate(line.replace('\n', '')):
