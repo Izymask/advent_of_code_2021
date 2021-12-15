@@ -27,6 +27,7 @@ class Cave:
         graph = self.create_graph(map_to_use)
         return nx.dijkstra_path_length(graph, (0, 0), max(map_to_use))
         
+    # Copyright Debnet
     def create_graph(self, map_to_use):
         graph = nx.DiGraph()
         graph.add_nodes_from(map_to_use)
